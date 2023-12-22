@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: rgb(167, 237, 255);
+    color:white;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+header > nav >ul {
+    display: flex;
+    background-color: rgb(167, 237, 255);
+    list-style: none;
+    justify-content: center;
+      
+}
+header > nav > ul > li {
+    padding: 20px;
+}
+
+header > nav > ul > li:hover {
+    background-color: rgb(68, 165, 255);
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+}
+.slider-box {
+
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0;
+    overflow:hidden ;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 22s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style:none ;
+    
+}
+
+.slider-box img {
+    
+    width: 100%;
+    /* height: 100%; */
+}
+
+@keyframes slide {
+    0%{margin-left:0% ;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+main{
+    position: relative;
+    top: 90px;
+    margin-bottom: 90px;
+}
+/* Copa America */
+
+.linea-tiempo {
+    background-color: rgb(2, 0, 105);
+    color: rgb(255, 255, 255);
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background:#ffb71d;
+    color: #ffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+
+}
+.btn-wsp:hover{
+    text-decoration:none ;
+    color: #0df053;
+    background: #ffff;
+
+}
+.copa-america{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.copa-america h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    font-size: 50px;
+    color: rgb(2, 0, 105);
+}
+
+.copa-america p {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.img-america {
+    display:inline-block;
+    background-color: rgb(2, 0, 105);
+    width: 200px;
+    padding: 10px;
+    
+}
+/* finalissima */
+
+.la-finalissima{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.la-finalissima h2 {
+    color: rgb(2, 0, 105);text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.img-finalissima {
+    width: 350px;
+    height: auto;
+    
+}
+
+.la-finalissima article figure {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+}
+
+/* Copa de Mundo */
+.la-copa-mundo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.la-copa-mundo h2 {
+    color:rgb(2, 0, 105);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    padding: 20px;
+}
+.la-copa-mundo img {
+    width: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.protagonistas {
+    background-color: rgb(167, 237, 255);
+    color: rgb(88, 118, 255);
+    margin: 10px;
+    padding: 20px;
+    border: 2px  solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+}
+.protagonistas > img {
+    width: 100px;
+
+}
+.entrevistas div h2  {
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(2, 0, 105);
+    height: 80px;
+    color: white;
+    
+}
+
+button { 
+    background-color: rgb(0, 0, 209);
+    color:  white;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    cursor: pointer;
+   
+}
+
+.h2noti {
+    text-align: center;
+    background-color: rgb(2, 0, 105);
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bloque-noticia {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    background-color: rgb(167, 237, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;  
+}
+
+.bloque-noticia h3 {
+    text-align:center;
+    font-size: 12px;
+    text-decoration:underline;
+    padding: 5px;
+}
+.bloque-noticia img {
+    height: 150px;
+}
+.Titulos {
+   width: 100%;
+   height: 500px;
+    background-image: 
+    linear-gradient(rgba(0, 15, 66, 0.9), rgba(0,15,66, 0.9)),
+    url("https://pbs.twimg.com/media/FiHEezAXEAoa_va.jpg:large");
+    background-repeat: no-repeat;
+    
+}
+.Titulos div {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.box-titulos ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+.box-titulos ul li {
+    padding: 45px;
+}
+.text {
+    margin-top: -80px;
+    padding-left: 20px;
+}
+
+
+.contacto {
+    padding-bottom: 15px;
+}
+footer{
+    background-color: rgb(167, 237, 255);
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
