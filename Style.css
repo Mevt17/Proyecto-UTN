@@ -80,86 +80,68 @@ main{
     position: relative;
     top: 90px;
     margin-bottom: 90px;
+
 }
+a {
+    text-decoration: none;
+}
+
 /* Copa America */
 
-.linea-tiempo {
+.comienzo {
     background-color: rgb(2, 0, 105);
     color: rgb(255, 255, 255);
     height: 150px;
     text-align: center;
     padding-top: 50px;
 }
-.btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background:#ffb71d;
-    color: #ffff;
-    border-radius: 50px;
+.col-12 h2  {
     text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-
-}
-.btn-wsp:hover{
-    text-decoration:none ;
-    color: #0df053;
-    background: #ffff;
-
-}
-.copa-america{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: justify;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.copa-america h2 {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: underline;
-    font-size: 50px;
+    font-size: 70px;
     color: rgb(2, 0, 105);
+    padding: 10px;
+    text-decoration: underline;
+}
+.col-12 {
+   text-align: center;
 }
 
-.copa-america p {
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px;
-}
 .img-america {
-    display:inline-block;
-    background-color: rgb(2, 0, 105);
-    width: 200px;
-    padding: 10px;
-    
+    width: 600px;
+    padding: 4px;
+    padding-right: 10px;
 }
+
+
 /* finalissima */
 
 .la-finalissima{
     display: flex;
     flex-wrap: wrap;
-    text-align: justify;
     padding-right: 30px;
     padding-left: 30px;
 }
 
 .la-finalissima h2 {
-    color: rgb(2, 0, 105);text-decoration: underline;
     text-align: center;
-    font-size: 50px;
-    padding: 50px;
+    font-size: 70px;
+    color: rgb(2, 0, 105);
+    padding: 10px;
+    text-decoration: underline;
 }
+.la-finalissima h4 {
+    text-align: center;
+}
+.la-finalissima .declaracion {
+    text-decoration:underline;
+} 
 
 .img-finalissima {
     width: 350px;
     height: auto;
+    display: inline-flexbox;
+    padding: 2px;
+   
     
 }
 
@@ -196,19 +178,23 @@ main{
 }
 
 .protagonistas {
-    background-color: rgb(167, 237, 255);
-    color: rgb(88, 118, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
     margin: 10px;
     padding: 20px;
-    border: 2px  solid black;
+    border: 1px  solid rgb(0, 113, 243);
     border-radius: 10px;
     width: 300px;
-    height: 450px;
+    height: 610px;
     text-align: center;
 }
 .protagonistas > img {
     width: 100px;
 
+}
+.protagonistas button {
+    border-radius: 10px;
+    border: none;
 }
 .entrevistas div h2  {
     text-align: center;
@@ -220,14 +206,21 @@ main{
 }
 
 button { 
-    background-color: rgb(0, 0, 209);
-    color:  white;
-    padding: 7px;
-    border-radius: 10px;
+    background-color: rgb(0, 113, 243);
+    padding: 6px;
+    border-radius: 20%;
     margin: 10px;
     width: 100px;
     cursor: pointer;
    
+}
+button:hover{
+    background-color: rgb(37, 70, 255);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
 }
 
 .h2noti {
@@ -245,14 +238,14 @@ button {
 .bloque-noticia {
     display: flex;
     width: 300px;
-    height: 350px;
+    height: 400px;
     display: flex;
     text-align: center;
-    background-color: rgb(167, 237, 255);
+    
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid black;  
+    border: 1px solid rgb(0, 113, 243);  
 }
 
 .bloque-noticia h3 {
@@ -262,7 +255,12 @@ button {
     padding: 5px;
 }
 .bloque-noticia img {
-    height: 150px;
+    height: 140px;
+    padding: 10px;
+}
+.bloque-noticia button {
+    border-radius: 10px;
+    border: none;
 }
 .Titulos {
    width: 100%;
@@ -296,6 +294,49 @@ button {
 
 .contacto {
     padding-bottom: 15px;
+}
+
+.social a {
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+}
+.social a:hover{
+    color: black;
+}
+.container-p {
+    align-items: center;
+    width: 600px;
+   
+}
+.form-process {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    display: none;
+}
+
+.step  h2 {
+    margin-bottom: 20px;
+
+}
+.step button{
+    background-color: #4caf50;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.step button:hover{
+    background-color: #45a04549 ;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 8px;
 }
 footer{
     background-color: rgb(167, 237, 255);
