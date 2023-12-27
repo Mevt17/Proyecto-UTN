@@ -6,7 +6,7 @@
 
 
 header{
-    background-color: rgb(167, 237, 255);
+    background-color: rgb(2, 0, 105);
     color:white;
     position: fixed;
     width: 100%;
@@ -17,17 +17,17 @@ header{
 
 header > nav >ul {
     display: flex;
-    background-color: rgb(167, 237, 255);
+    background-color: rgb(2, 0, 105);
     list-style: none;
     justify-content: center;
-      
+     
 }
 header > nav > ul > li {
     padding: 20px;
 }
 
 header > nav > ul > li:hover {
-    background-color: rgb(68, 165, 255);
+    background-color: goldenrod;
 }
 
 .nav-links{
@@ -93,7 +93,7 @@ a {
     color: rgb(255, 255, 255);
     height: 150px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .col-12 h2  {
     text-align: center;
@@ -105,21 +105,26 @@ a {
 .col-12 {
    text-align: center;
 }
-
+.col p {
+    text-align: justify;
+    padding-top: 16px;
+    padding-right: 100px;
+}
 .img-america {
-    width: 600px;
-    padding: 4px;
-    padding-right: 10px;
+    height: 800px;
+    padding-top: 50px;
+    padding-left: 150px;
+    
 }
 
 
 /* finalissima */
 
 .la-finalissima{
-    display: flex;
+    padding-top: 50px;
     flex-wrap: wrap;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .la-finalissima h2 {
@@ -139,11 +144,9 @@ a {
 .img-finalissima {
     width: 350px;
     height: auto;
-    display: inline-flexbox;
     padding: 2px;
-   
-    
 }
+
 
 .la-finalissima article figure {
     display: flex;
@@ -156,8 +159,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .la-copa-mundo h2 {
@@ -169,7 +172,12 @@ a {
 }
 .la-copa-mundo img {
     width: 500px;
+    float: left;
+    border: 3px solid rgb(2, 0, 105);
+    border-radius: 10px;
+    margin-right: 20px;
 }
+
 
 .cards {
     display: flex;
@@ -288,27 +296,16 @@ button a {
 }
 .text {
     margin-top: -80px;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
-
-.contacto {
-    padding-bottom: 15px;
-}
-
-.social a {
-    padding: 0 10px;
-    color: rgb(255, 255, 255);
-}
-.social a:hover{
-    color: black;
-}
 .container-p {
     align-items: center;
-    width: 600px;
+    width: 500px;
    
 }
 .form-process {
+      
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
@@ -324,25 +321,43 @@ button a {
 
 }
 .step button{
-    background-color: #4caf50;
+    background-color: rgb(0, 113, 243);
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 .step button:hover{
-    background-color: #45a04549 ;
+    background-color: rgb(37, 70, 255);
 }
 input{
     width: 100%;
     padding: 8px;
     margin: 8px 8px;
 }
+
+.contacto {
+    padding-bottom: 15px;
+}
+
+.social a {
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+}
+.social a:hover{
+    color: goldenrod;
+}
+
+footer .social p {
+    text-decoration: underline;
+}
 footer{
-    background-color: rgb(167, 237, 255);
-    color: black;
+    background-color: rgb(2, 0, 105);
+    color: white;
     width: 100%;
     text-align: center;
     padding: 10px;
 }
-
+footer p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
