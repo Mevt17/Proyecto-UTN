@@ -114,7 +114,7 @@ a {
     height: 800px;
     padding-top: 50px;
     padding-left: 150px;
-    
+   
 }
 
 
@@ -142,8 +142,8 @@ a {
 } 
 
 .img-finalissima {
-    width: 350px;
-    height: auto;
+    width: 320px;
+    height: 200px;
     padding: 2px;
 }
 
@@ -300,20 +300,61 @@ button a {
 }
 
 .container-p {
-    align-items: center;
+    justify-content: center;
     width: 500px;
-   
+    
 }
 .form-process {
-      
+   
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
-
+.Formulario {
+    background-image: linear-gradient(135deg, #086bff, #50bfff, #6399fd, #80ddf5, #6dbdff);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    width: 100%;
+    padding-left: 35%;
+    padding-bottom: 150px;
+}
+@keyframes fanimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+.Formulario .suscribite {
+    color: rgb(255, 253, 237);
+   padding-bottom: 50px;
+   padding-top: 50px;
+   text-decoration: overline;
+   
+   
+}
+.Formulario .h2p {
+    text-align: center;
+    width: 100%;
+   
+}
+.Formulario .btn-formulario {
+    background-color: goldenrod;
+    color: white;
+    border: black;
+    border-radius: 10px;
+    width: 54%;
+    
+}
 .step {
-    display: none;
+    display: none; 
 }
 
 .step  h2 {

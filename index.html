@@ -16,16 +16,17 @@
         <h1><strong>Camino a la gloria eterna</strong></h1>
         <nav>
             <ul>
-                <li><a class="nav-links"href="">Inicio</a></li>
-                <li><a class="nav-links" href="">Copa America</a></li>
-                <li><a class="nav-links" href="">Finalissima</a></li>
-                <li><a class="nav-links" href="">Copa del Mundo</a></li>
-                <li><a class="nav-links" href="">Contacto</a></li>
+                <li><a class="nav-links"href="#Inicio">Inicio</a></li>
+                <li><a class="nav-links" href="#Copa-America">Copa America</a></li>
+                <li><a class="nav-links" href="#Finalisima">Finalissima</a></li>
+                <li><a class="nav-links" href="#Copa-Mundo">Copa del Mundo</a></li>
+                <li><a class="nav-links" href="#Noticias">Noticas</a></li>
+                <li><a class="nav-links" href="#Formulario">Suscricion</a></li>
             </ul>
         </nav>
     </header>
    <main>
-        <div class="slider-box">
+        <div class="slider-box" id="Inicio">
             <ul>
                 <li><img src="./Assets/copa del mundo.webp" alt=""></li>
                 <li><img src="./Assets/finalissima.jpg" alt=""></li>
@@ -43,7 +44,7 @@
 
        <!--  Copa America    -->
        
-       <section class="container-fluid" >
+       <section class="container-fluid" id="Copa-America">
             <div class="row">
                 <div class="col-12" >
                     <h2><strong>Copa America</strong></h2>
@@ -77,7 +78,7 @@
 
             <!-- La Finalissima-->
 
-        <section class="la-finalissima">
+        <section class="la-finalissima" id="Finalisima">
             
             <h2  >Finalissima</h2>
             
@@ -100,8 +101,8 @@
                 </ul>
                 
                 <img class="img-finalissima" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0601%2Fr1020270_1296x729_16%2D9.jpg&w=570&format=jpg" alt="">
-                <img class="img-finalissima" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0601%2Fr1020270_1296x729_16%2D9.jpg&w=570&format=jpg" alt="">
-                <img class="img-finalissima" src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0601%2Fr1020270_1296x729_16%2D9.jpg&w=570&format=jpg" alt="">
+                <img class="img-finalissima" src="Assets/finalissima-messigroup.jpg" alt="">
+                <img class="img-finalissima" src="Assets/finalissima-messi-up.jpg" alt="">
             
                 <ul data-aos="fade-up">
                     <li>"Este grupo viene creciendo cada vez más y es lo que pretendemos. Tuvimos 10 días de trabajo muy buenos. Pudimos seguir mejorando, agregarle variantes al juego. Este grupo está preparado para cualquier cosa, siempre con los pies en el suelo y con humildad. Estamos para pelearle a cualquiera".</li>
@@ -115,7 +116,7 @@
 
             <!-- La Copa del mundo-->
             
-        <section class="la-copa-mundo">
+        <section class="la-copa-mundo" id="Copa-Mundo">
             <h2>Copa del mundo</h2>
             <article>
                 <img src="./Assets/copadelmundomessi.jpg_large" alt="" data-aos="fade-up"
@@ -180,7 +181,7 @@
 
             <h2 class="h2noti">Noticias</h2>
     
-        <section class="noticias" >
+        <section class="noticias" id="Noticias" >
             <article class="bloque-noticia" data-aos="fade-up"
             data-aos-duration="3000">
                 <div>
@@ -291,22 +292,23 @@
             </section>
            
         </section>
-        <section class="Formulario">
-            <h2>Mantene tu pasion al dia, suscribite</h2>
-            <button class="btn-formulario" id="show-process" onclick="showProcess()">Formulario</button>
+        <section class="Formulario" id="Formulario">
+            <h2 class="suscribite">Mantené tu pasión al día, suscribite</h2>
+            <button class="btn-formulario" id="show-process" onclick="showProcess()">Formulario de Suscripción </button>
 
             <div id="process-container" class="container-p">
                 <form id="form-process" class="form-process">
 
                     <div class="step" id="step1">
-                        <h2>Paso 1</h2>
+                        <h2 class="h2p">Paso 1</h2>
                         <label for="">Nombre</label>
+                        
                         <input type="text" id="nombre" required>
                         <button type="button" onclick="nextStep(1)">Siguiente</button>
                     </div>
 
                     <div class="step" id="step2">
-                        <h2>Paso 2</h2>
+                        <h2 class="h2p">Paso 2</h2>
                         <label for="">Apellido</label>
                         <input type="text" id="Apellido" required>
                         <button type="button" onclick="nextStep(2)">Siguiente</button>
@@ -314,11 +316,14 @@
                     </div>
 
                     <div class="step" id="step3">
-                        <h2>Paso 3</h2>
+                        <h2 class="h2p">Paso 3</h2>
                         <label for="">Email</label>
                         <input type="text" id="Email" required>
                         <button type="button" onclick="send(event)">Enviar</button>
                         <button type="button" onclick="prevStep(3)">Anterior</button>
+                    </div>
+                    <div id="user-data">
+
                     </div>
                 </form>
             </div>
